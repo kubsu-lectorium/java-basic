@@ -7,4 +7,14 @@ public class Cheburashka {
     Cheburashka(String sound) {
         cheburashkaSound = sound;
     }
+
+    /* метод №1 */
+    void makeSound() {
+        System.out.println("Cheburashka sound=" + cheburashkaSound);
+    }
+
+    /* метод №2 */
+    void takeOrange() {
+        System.out.println("Take orange… Nyam-nyam");
+    }
 }
