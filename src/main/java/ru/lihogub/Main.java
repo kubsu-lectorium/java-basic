@@ -2,13 +2,12 @@ package ru.lihogub;
 
 public class Main {
     public static void main(String[] args) {
-        // создали ссылку (в термина C++ - это на самом деле указатель)
-        Cheburashka cheburashka;
+        // multiple Cheburashka instances
+        Cheburashka leftCheburashka = new Cheburashka("Left twix bar");
+        Cheburashka rightCheburashka = new Cheburashka("Right twix bar");
 
-        // создаем объект в куче и ссылку на него кладем в переменную cheburashka
-        cheburashka = new Cheburashka("}{очу апельсинов!");
-
-        /* вызываем метод */
-        cheburashka.makeSound();
+        // each instance keeps different data
+        leftCheburashka.makeSound();
+        rightCheburashka.makeSound();
     }
 }

@@ -1,19 +1,19 @@
 package ru.lihogub;
 
 public class Cheburashka {
-    String cheburashkaSound; // это поле
+    String cheburashkaSound; // field
 
-    /* это конструктор */
+    /* constructor */
     Cheburashka(String sound) {
         cheburashkaSound = sound;
     }
 
-    /* метод №1 */
+    /* method №1 */
     void makeSound() {
         System.out.println("Cheburashka sound=" + cheburashkaSound);
     }
 
-    /* метод №2 */
+    /* method №2 */
     void takeOrange() {
         System.out.println("Take orange… Nyam-nyam");
     }
